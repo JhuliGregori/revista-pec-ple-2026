@@ -1,0 +1,42 @@
+#lista-cronicas{display:block;max-width:760px;margin:0 auto}
+.chapter{padding:64px 0 80px;border-bottom:1px solid #4f352a44}
+.chapter:first-child{padding-top:28px}
+.chapter:last-child{border-bottom:0;padding-bottom:0}
+.chapter-title{font:700 clamp(30px,5vw,48px)/1.18 Georgia,serif;letter-spacing:-.025em;margin:0 0 16px;text-transform:none;overflow-wrap:break-word}
+.chapter-byline{font:700 13px/1.5 Arial,sans-serif;letter-spacing:.08em;color:#783f30;margin:0 0 38px}
+.chapter-prose p{font:20px/1.85 Georgia,serif;margin:0 0 1.3em;white-space:pre-line;overflow-wrap:break-word}
+.chapter-author{margin-top:44px;padding:24px 0 0 24px;border-left:3px solid var(--cyan)}
+.chapter-author h4{font:700 17px/1.4 Arial,sans-serif;margin:0 0 10px}
+.chapter-author p{font:17px/1.65 Georgia,serif;margin:0;color:#4f352a}
+@media(max-width:600px){.chapter{padding:44px 0 56px}.chapter-prose p{font-size:18px;line-height:1.8}.chapter-author{padding-left:18px}.chapter-title{letter-spacing:0}}
+@media print{header,nav,#projeto,#participar,#ebook,footer{display:none}.chapter{break-before:page;border:0}.chapter-author{break-inside:avoid}body{background:white;color:black}}
+.chapter-author{display:flex;align-items:flex-start;gap:24px}.author-image{width:144px;height:144px;object-fit:cover;flex:0 0 144px;border-radius:50%;border:2px solid var(--ink);background:#fff}.author-image-jhuli{object-fit:cover;object-position:50% 42%}.author-description{min-width:0}
+@media(max-width:600px){.chapter-author{gap:16px}.author-image{width:96px;height:96px;flex-basis:96px}.chapter-author p{font-size:16px}}@media(max-width:380px){.chapter-author{display:block}.author-image{margin-bottom:16px}}
+
+:root{--ink:#2e201b;--paper:#f5ede0;--cyan:#bd8057;--red:#985439;--line:#bba28c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 Georgia,serif}a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #b36d42;outline-offset:4px}
+header{background:radial-gradient(ellipse at 88% 0%,#5a392a,transparent 65%),#2e201b;color:var(--paper);padding:25px max(24px,calc((100vw - 1080px)/2));min-height:72vh;display:flex;flex-direction:column;justify-content:space-between;border-bottom:8px solid var(--cyan)}
+nav{display:flex;gap:12px 25px;flex-wrap:wrap;font:600 15px/1.4 system-ui}nav a{text-underline-offset:6px}.cover{padding:64px 0 40px}.eyebrow,.stamp{font:700 14px/1.5 system-ui;letter-spacing:.1em;text-transform:uppercase}.eyebrow{color:#e4b08a}.stamp{color:#80452f}
+h1,h2,h3{font-weight:400;line-height:1.02}h1{font-size:clamp(56px,11vw,136px);letter-spacing:-.075em;margin:20px 0}h1 em{color:#e4b08a;font-weight:400}h2{font-size:clamp(38px,7vw,76px);letter-spacing:-.055em;margin:0 0 24px}h3{font-size:29px;margin:0}.lead{max-width:590px;font-size:clamp(21px,3vw,30px);line-height:1.35;border-left:3px solid var(--cyan);padding-left:18px}
+main{max-width:1128px;margin:auto;padding:0 24px}section{padding:clamp(48px,8vw,96px) 0;border-bottom:1px solid var(--line)}p{max-width:68ch}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:20px}.tile{padding:24px;border:1px solid var(--line);background:#fff8ef}.btn{display:inline-block;border:0;background:#783f30;color:#fff9ec;padding:12px 17px;text-decoration:none;cursor:pointer;font:600 15px/1.4 system-ui}.btn:hover{background:#51291f}footer{background:var(--ink);color:var(--paper);padding:32px 24px;text-align:center;font:15px system-ui}
+form{max-width:720px}label{display:block;margin:18px 0 8px}input,select{display:block;width:100%;padding:10px;font:inherit;color:inherit;background:#fff8ef;border:1px solid #967b65;border-radius:0}input[type=file]{white-space:normal}small{display:block;font:15px/1.5 system-ui;margin:8px 0 20px} [hidden]{display:none!important} .form-header{min-height:auto}.form-header h1{font-size:clamp(42px,8vw,92px)}.form-header .cover{padding:24px 0}
+@media(max-width:600px){.cover{padding-top:48px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+.literary-cover{
+  min-height:72svh;
+  background:
+    linear-gradient(90deg,#2e201b 0%,#2e201bf2 34%,#2e201b9c 61%,#2e201b12 100%),
+    url("xilogravura.webp") center 52% / cover no-repeat,
+    #2e201b;
+}
+.literary-cover h1{font-size:clamp(48px,9vw,122px)}
+.literary-cover .lead{max-width:36ch}
+@media(max-width:600px){
+  .literary-cover{
+    background:
+      linear-gradient(90deg,#2e201bf5,#2e201b91),
+      url("xilogravura.webp") 60% center / cover no-repeat,
+      #2e201b;
+  }
+}
